@@ -10,10 +10,9 @@
    aud = document.getElementById('file3');
   }
   else console.log('nothing checked');
-    hour = document.getElementById('h').value;
-    minute = document.getElementById('m').value;
-    sec = document.getElementById('s').value;
-
+    hour = document.getElementById('h').value || 0;
+    minute = document.getElementById('m').value || 0;
+    sec = document.getElementById('s').value || 0;
     hour = hour * 3600000;
     minute = minute * 60000;
     sec = sec * 1000;

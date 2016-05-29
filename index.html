@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head><title>
+<head>
+<link rel="stylesheet" type="text/css" href="css.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<title>
 </title>
 </head>
 <body>
+<div id="container">
 <h1>timer</h1>
-<input type="text" value="hours" id="h"/>
-<input type="text" value="minutes" id="m"/>
-<input type="text" value="seconds" id="s"/>
+<input type="text" placeholder="hours" id="h"/>
+<input type="text" placeholder="minutes" id="m"/>
+<input type="text" placeholder="seconds" id="s"/>
+
+<ul class="opt">
 <input type="radio" id="aud1">elephant</input>
 <input type="radio" id="aud2">prairie dog</input>
 <input type="radio" id="aud3">tiger</input>
+</ul>
 <audio id="file1"> <source src ="elephant3.wav" type="audio/wav"></audio>
 <audio id="file2"> <source src ="prairedog.wav" type="audio/wav"></audio>
 <audio id="file3"> <source src ="Tiger1.wav" type="audio/wav"></audio>
@@ -21,19 +28,22 @@
 <button onclick="cancel()">cancel</button>
 
 <h1>alarm</h1>
-<input type="text" value="time(h)" id="hour"/>
-<input type="text" value="time(m)" id="minute" />
+<input type="text" placeholder="time(h)" id="hour"/>
+<input type="text" placeholder="time(m)" id="minute" />
+<ul class="opt">
 <input type="radio" id="aud4">elephant</input>
 <input type="radio" id="aud5">prairie dog</input>
 <input type="radio" id="aud6">tiger</input>
+</ul>
 <button onclick="setalarm()">set alarm</button>
 
 
 <button onclick ="snooze()">snooze</button>
 
 <button onclick="cancel()">cancel</button>
-
+</div>
 <script src="js.js"></script>
+
 </body>
 
 </html>
