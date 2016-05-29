@@ -3,11 +3,11 @@
 
   function settimer(){
     if (document.getElementById('aud1').checked) {
-      var aud = document.getElementById('file1');
+       aud = document.getElementById('file1');
   }else if(document.getElementById('aud2').checked) {
-    var aud = document.getElementById('file2');
+   aud = document.getElementById('file2');
   }else if (document.getElementById('aud3').checked){
-    var aud = document.getElementById('file3');
+   aud = document.getElementById('file3');
   }
   else console.log('nothing checked');
     hour = document.getElementById('h').value;
@@ -30,11 +30,11 @@
 
   function setalarm(){
         if (document.getElementById('aud4').checked) {
-      var aud = document.getElementById('file1');
+     aud = document.getElementById('file1');
   }else if(document.getElementById('aud5').checked) {
-    var aud = document.getElementById('file2');
+   aud = document.getElementById('file2');
   }else if (document.getElementById('aud6').checked){
-    var aud = document.getElementById('file3');
+   aud = document.getElementById('file3');
   }
     d = new Date();
     console.log(d);
@@ -51,3 +51,7 @@
 
     timer = setTimeout(function(){aud.play();}, alarmTime);
   };
+
+function snooze(){
+  timer = setTimeout(function(){aud.play();}, 300000 );
+};
